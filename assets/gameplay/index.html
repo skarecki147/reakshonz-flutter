@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ReakShonz</title>
+    <meta name="Description" content="Reactions test">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="_global\css/reset.css" rel="stylesheet" />
+    <link href="_global\css/pwa.css" rel="stylesheet" />
+    <link href="reakshonz\css/pwa.css" rel="stylesheet" />
+    <script src="_global\js/app.js"></script>
+    <script src="_global\js/helpers.js"></script>
+    <script src="_global\js/vendor/jquery/3.4.1.min.js"></script>
+    <script src="_global\js/vendor/vue/vue.js"></script>
+    <script src="_global\js/core/vue.js"></script>
+
+</head>
+
+<body>
+
+    <main class="app" id="app"
+        v-cloak
+    >
+        <div id="play" class="screen screen--current screen--padding-20 screen screen--full-screen flex-column screen--white">
+
+            <div class="section-nav theme-bg">
+                <span class="accuracy" 
+                    v-if="!game.targetActive"
+                    v-html="ScoreDisplayAccuracy"
+                >...</span>
+                <span 
+                    v-if="!game.targetActive"
+                    v-html="ScoreDisplay"
+                >...</span>
+                <span class="speed" 
+                    v-if="!game.targetActive"
+                    v-html="ScoreDisplaySpeed"
+                >...</span>
+            </div>
+
+            <div id="targets"
+                v-if="game"
+            >
+                <div class="target-holder target-holder-1" data-id="1"
+                    :class="[{'active': game.targetActive && game.activeTarget === 1}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-2" data-id="2"
+                    :class="[{'active': game.targetActive && game.activeTarget === 2}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-3" data-id="3"
+                    :class="[{'active': game.targetActive && game.activeTarget === 3}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-4" data-id="4"
+                    :class="[{'active': game.targetActive && game.activeTarget === 4}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-5" data-id="5"
+                    :class="[{'active': game.targetActive && game.activeTarget === 5}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-6" data-id="6"
+                    :class="[{'active': game.targetActive && game.activeTarget === 6}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-7" data-id="7"
+                    :class="[{'active': game.targetActive && game.activeTarget === 7}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-8" data-id="8"
+                    :class="[{'active': game.targetActive && game.activeTarget === 8}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+                <div class="target-holder target-holder-9" data-id="9"
+                    :class="[{'active': game.targetActive && game.activeTarget === 9}]"
+                >
+                    <div class="target target--outer"
+                        @click.prevent="gameTargetTouched"
+                    ></div>
+                    <div class="target target--middle"></div>
+                    <div class="target target--inner"></div>
+                    <span class="hit"></span>
+                </div>
+
+                <div class="start"
+                    v-if="!game.active"
+                >
+                    <button type="submit" class="button button--block theme-bg"
+                        @click.prevent="gameStart"
+                    >Start</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+        
+    
+    <script src="reakshonz\js/vue.js"></script>
+    <script src="reakshonz\js/game.js"></script>
+    <script src="reakshonz\js/app.js"></script>
+    <script>
+        app.init();
+    </script>
+
+</body>
+
+</html>

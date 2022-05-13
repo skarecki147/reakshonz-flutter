@@ -1,0 +1,55 @@
+/*  core  */
+html { box-sizing: border-box; font-size: 62.5%; height:100vh; }
+body { background: #EEE; font-family: sans-serif; font-size: 1.6rem; color: #888; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; padding-top: env(safe-area-inset-top); }
+button:focus { outline-width: inherit; }
+h1 { font-size:150%; }
+h2 { font-size:144%; }
+a { color: #888; }
+
+/*  app  */
+.app { background: #FFF; position: fixed; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; }
+.flex-column {      display: -webkit-box; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; }
+
+/*  screens  */
+.screen { position: fixed; left: -150%; top: 0; width: 100%; bottom: 7rem; -webkit-overflow-scrolling: touch; padding: 4rem; z-index: 1; opacity: 0; pointer-events: none; background-color: #FFF; overflow: auto; background-repeat: no-repeat; background-attachment: local; overflow-x: hidden; }
+.screen--current { opacity: 1; pointer-events: auto; z-index: 2; left: 0; }
+
+
+/*  section-nav  */
+.section-nav { position: absolute; left: 0; right: 0; top: 0; background: #888; color: #fff; height: 5rem; font-size: 2.4rem; line-height: 5rem; text-align: center; }
+
+
+
+/*  buttons  */
+.back-button__icon { width: .9rem; height: 1.8rem; }
+.svgs path { fill: #888; }
+.button { display: -webkit-inline-box; display: inline-flex; height: 5.2rem; border-radius: 2.6rem; line-height: 1; font-size: 1.4rem; font-family: sans-serif; letter-spacing: .2rem; background: #888; color: #FFF; font-weight: bold; text-transform: uppercase; border: .1rem solid #888; padding: 0 3rem; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; }
+.button--block { width: 100%; text-align: center; margin: 0 auto; padding: 0; }
+.icon-button { height: 4rem; width: 4rem; display: -webkit-box; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; }
+.back-button { position: absolute; left: 0; top: .5rem; z-index: 3; }
+.btn { border-radius: 2.5rem; height: 5rem; background: #fff; border: .2rem solid #fff; line-height: 1; text-decoration: none; display: block; font-size: 1.4rem; text-transform: uppercase; text-align: center; min-width: 19rem; margin: 0 auto; font-weight: 700; }
+.btn--outline { background: none !important; color: #fff; }
+
+/*  helpers  */
+.block { display: block; }
+.centre { margin-left: auto; margin-right: auto; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-b-10 { margin-bottom: 1rem; }
+.margin-b-20 { margin-bottom: 2rem; }
+.margin-b-25 { margin-bottom: 2.5rem; }
+.margin-b-30 { margin-bottom: 3rem; }
+.margin-b-35 { margin-bottom: 3.5rem; }
+.margin-t-30 { margin-top: 3rem; }
+.max-width-340 { max-width: 34rem; }
+.max-width-390 { max-width: 39rem; }
+.padding-b-0 { padding-bottom: 0; }
+.screen--padding-20 { padding: 2rem; }
+.screen--padding-sides-20 { padding-left:2rem; padding-right:2rem; }
+.text-align-centre { text-align: center; }
+.wysiwyg { font-size: 1.8rem; }
+.wysiwyg ul { padding:0 0 2rem 3rem; }
+.wysiwyg ul li { list-style:circle; line-height:1.5; margin:0 0 .5rem; }
+.wysiwyg a { word-wrap:break-word; text-decoration:underline; }
+
+
+

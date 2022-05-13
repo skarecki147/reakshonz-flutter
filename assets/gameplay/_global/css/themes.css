@@ -1,0 +1,72 @@
+/*  dark theme  */
+@media (prefers-color-scheme: dark) {
+    body { background: #333; }
+    body, a { color: #FFF; }
+    a:hover { color:#CCC; }
+    .app-navigation, .section-nav { background: #444; }
+    .svgs path.theme-fg { fill: #FFF; }
+    .svgs path.theme-bg { fill: #888; }
+    .screen { background-color: #000; }
+    .spinner-holder { background:#000 !important; }
+    div.spinner div { background:#FFF !important; }
+}
+
+/*  DM blue theme  */
+.theme-app-dm-blue,
+.theme-app-dm-blue .theme-bg { background: #52C7EB; border-color: #52C7EB; }
+.theme-app-dm-blue,
+.theme-app-dm-blue a,
+.theme-app-dm-blue .theme-fg { color: #52C7EB; }
+.theme-app-dm-blue .theme-bg-linear { background: linear-gradient(45deg, #32A7CB 0%, #52C7EB 50%, #72E7FB 100%) !important; }
+.theme-app-dm-blue .checkbox__checkbox:checked + .checkbox__label:after { background-color: #52C7EB; }
+.theme-app-dm-blue .svgs path.theme-fg { fill: #52C7EB; }
+.theme-app-dm-blue .svgs path.theme-bg { fill: #FFF; }
+.theme-app-dm-blue .theme-bg .theme-fg, .theme-app-dm-blue .theme-bg .theme-fg a { color:#FFF; }
+
+/*  DM green theme  */
+.theme-app-dm-green,
+.theme-app-dm-green .theme-bg { background: #A9C000; border-color: #A9C000;  }
+.theme-app-dm-green,
+.theme-app-dm-green a,
+.theme-app-dm-green .theme-fg { color: #A9C000; }
+.theme-app-dm-green .theme-bg-linear { background: linear-gradient(45deg, #89A000 0%, #A9C000 50%, #C9E020 100%) !important; }
+.theme-app-dm-green .checkbox__checkbox:checked + .checkbox__label:after { background-color: #A9C000; }
+.theme-app-dm-green .svgs path.theme-fg { fill: #A9C000; }
+.theme-app-dm-green .svgs path.theme-bg { fill: #FFF; }
+.theme-app-dm-green .theme-bg .theme-fg, .theme-app-dm-green .theme-bg .theme-fg a { color:#FFF; }
+
+/*  DM orange theme  */
+.theme-app-dm-orange,
+.theme-app-dm-orange .theme-bg { background: #F17B2D; border-color: #F17B2D;  }
+.theme-app-dm-orange,
+.theme-app-dm-orange a,
+.theme-app-dm-orange .theme-fg { color: #F17B2D; }
+.theme-app-dm-orange .theme-bg-linear { background: linear-gradient(45deg, #D15B0D 0%, #F17B2D 50%, #F19B4D 100%) !important; }
+.theme-app-dm-orange .checkbox__checkbox:checked + .checkbox__label:after { background-color: #F17B2D; }
+.theme-app-dm-orange .svgs path.theme-fg { fill: #F17B2D; }
+.theme-app-dm-orange .svgs path.theme-bg { fill: #FFF; }
+.theme-app-dm-orange .theme-bg .theme-fg, .theme-app-dm-orange .theme-bg .theme-fg a { color:#FFF; }
+
+/*  DM pink theme  */
+.theme-app-dm-pink,
+.theme-app-dm-pink .theme-bg { background: #F04576; border-color: #F04576;  }
+.theme-app-dm-pink,
+.theme-app-dm-pink a,
+.theme-app-dm-pink .theme-fg { color: #F04576; }
+.theme-app-dm-pink .theme-bg-linear { background: linear-gradient(45deg, #D02556 0%, #F04576 50%, #F06596 100%) !important; }
+.theme-app-dm-pink .checkbox__checkbox:checked + .checkbox__label:after { background-color: #F04576; }
+.theme-app-dm-pink .svgs path.theme-fg { fill: #F04576; }
+.theme-app-dm-pink .svgs path.theme-bg { fill: #FFF; }
+.theme-app-dm-pink .theme-bg .theme-fg, .theme-app-dm-pink .theme-bg .theme-fg a { color:#FFF; }
+
+/*  DM purple theme  */
+.theme-app-dm-purple,
+.theme-app-dm-purple .theme-bg { background: #702C82; border-color: #702C82;  }
+.theme-app-dm-purple,
+.theme-app-dm-purple a,
+.theme-app-dm-purple .theme-fg { color: #702C82; }
+.theme-app-dm-purple .theme-bg-linear { background: linear-gradient(45deg, #500C62 0%, #702C82 50%, #904CA2 100%) !important; }
+.theme-app-dm-purple .checkbox__checkbox:checked + .checkbox__label:after { background-color: #702C82; }
+.theme-app-dm-purple .svgs path.theme-fg { fill: #702C82; }
+.theme-app-dm-purple .svgs path.theme-bg { fill: #FFF; }
+.theme-app-dm-purple .theme-bg .theme-fg, .theme-app-dm-purple .theme-bg .theme-fg a { color:#FFF; }

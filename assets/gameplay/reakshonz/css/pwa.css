@@ -1,0 +1,39 @@
+/*  home  */
+.logo { border-radius:50%; }
+
+/*  play  */
+.section-nav .accuracy { float:left; margin-left: 20px; opacity:0.5; }
+.section-nav .speed { float:right; margin-right: 20px; opacity:0.5; }
+
+/*  game  */
+#targets { width:200px; height:200px; position:absolute; top: 50%; margin: -100px 0 0 -100px; left: 50%;  opacity:0; }
+.target-holder { width:60px; height:60px; position: absolute; margin:-30px 0 0 -30px; }
+.target { position: absolute; top: 50%; left: 50%; border-radius: 50%; opacity:0.5;  }
+.target-holder.active .target { opacity:1; }
+.target--outer { background:#52C7EB; width:100%; height:100%; margin: -50% 0 0 -50%; }
+.target--middle { background:#FFF; width:60%; height:60%; margin: -30% 0 0 -30%; pointer-events:none; }
+.target--inner { background:#F17B2D; width:20%; height:20%; margin: -10% 0 0 -10%; color:#FFF; pointer-events:none; }
+.target-holder-1 { top:16.66%; left: 16.66%; }
+.target-holder-2 { top:16.66%; left: 50%; }
+.target-holder-3 { top:16.66%; left: 83.34%; }
+.target-holder-4 { top:50%; left: 16.66%; }
+.target-holder-5 { top:50%; left: 50%; }
+.target-holder-6 { top:50%; left: 83.34%; }
+.target-holder-7 { top:83.34%; left: 16.66%; }
+.target-holder-8 { top:83.34%; left: 50%; }
+.target-holder-9 { top:83.34%; left: 83.34%; }
+
+#targets .start { position: absolute; top: 50%; left: 50%; width: 180px; margin: -26px 0 0 -90px; }
+
+.target-holder .hit { position: absolute; width: 10px; height: 10px; margin: -5px 0 0 -5px; top: 50%; left: 50%; pointer-events: none; opacity: 0; }
+.target-holder .hit:before, .target-holder .hit:after { content: ""; position: absolute; z-index: 0; background: #933; }
+.target-holder .hit:before { left: 50%; width:2px; margin-left: -1px; height: 100%; }
+.target-holder .hit:after { top: 50%; height: 2px; margin-top: -1px; width: 100%; }
+.target-holder .hit.active { -webkit-animation: fadeout 0.5s linear forwards; animation: fadeout 0.5s linear forwards; opacity: 1; }
+@-webkit-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0 } }
+@keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0 } }
+
+/*  scores  */
+.score-parts { position: absolute; top: 2rem; color: #FFF; width:100%; }
+.score-parts .score-part { width:50%; text-align: center;  display: inline-block; float: left; }
+.score-parts .score-part span.label { text-transform:uppercase; font-size:75%; opacity:0.75; }

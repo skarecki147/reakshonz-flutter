@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reakshonz_flutter/pages/account_details.dart';
 import 'package:reakshonz_flutter/pages/auth_login.dart';
 
 class AccountPage extends StatefulWidget {
@@ -47,7 +48,10 @@ class _AccountPageState extends State<AccountPage> {
                       primary: Colors.white,
                       minimumSize: const Size.fromHeight(65),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => AccountDetailsPage()));
+                    },
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                       child: Row(

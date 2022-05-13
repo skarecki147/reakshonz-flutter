@@ -32,7 +32,7 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
                             "Display name",
                             style: TextStyle(color: Color.fromRGBO(112, 44, 130, 1), fontSize: 18.0),
                           )),
-                      const SizedBox(height: 5.0),
+                      const SizedBox(height: 25.0),
                       TextFormField(
                         // controller: 'password',
                         decoration: const InputDecoration(
@@ -48,7 +48,7 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
                         ),
                         textInputAction: TextInputAction.done,
                       ),
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 20.0),
                       SizedBox(
                         width: 330.0,
                         height: 60.0,

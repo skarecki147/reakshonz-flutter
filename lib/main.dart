@@ -11,14 +11,14 @@ void main() {
 }
 
 class StartPage extends StatefulWidget {
-  Map<TextEditingController, String> value;
+  Map<dynamic, dynamic> value;
   StartPage(this.value, {Key? key}) : super(key: key);
   @override
   State<StartPage> createState() => _StartPageState(value);
 }
 
 class _StartPageState extends State<StartPage> {
-  Map<TextEditingController, String> anotherValue = {};
+  Map<dynamic, dynamic> anotherValue = {};
   int activeIndex = 0;
   List<Widget> pages = [];
 

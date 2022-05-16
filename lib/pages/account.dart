@@ -1,27 +1,34 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:reakshonz_flutter/pages/account_details.dart';
 import 'package:reakshonz_flutter/pages/auth_login.dart';
 
 class AccountPage extends StatefulWidget {
-  Map<TextEditingController, String> value;
-
+  Map<dynamic, dynamic> value;
   AccountPage(this.value, {Key? key}) : super(key: key);
+
   @override
-  // ignore: no_logic_in_create_state
   State<AccountPage> createState() => _AccountPageState(value);
 }
 
 class _AccountPageState extends State<AccountPage> {
-  Map<TextEditingController, String> value = {};
+  Map<dynamic, dynamic> anotherValue = {};
+  _AccountPageState(this.anotherValue);
 
   String username = '';
   String userEmail = '';
 
-  _AccountPageState(Map<TextEditingController, String> value);
   @override
   void initState() {
     super.initState();
-    print(value.length);
+    setState(() {
+      userEmail = anotherValue['email'];
+    });
+    setState(() {
+      print(anotherValue);
+      username = anotherValue['displayName'];
+    });
   }
 
   Widget build(BuildContext context) {

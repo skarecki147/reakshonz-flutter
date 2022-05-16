@@ -13,7 +13,7 @@ class AuthLoginPage extends StatefulWidget {
 class _AuthLoginPageState extends State<AuthLoginPage> {
   final email = TextEditingController();
   final password = TextEditingController();
-  Map<TextEditingController, String> responseData = {};
+  Map<dynamic, dynamic> responseData = {};
   late Ink responseError;
 
   @override
@@ -21,14 +21,6 @@ class _AuthLoginPageState extends State<AuthLoginPage> {
     if (mounted) {
       super.setState(fn);
     }
-  }
-
-  _errorText() {
-    final text = email.value.text;
-    if (text.isEmpty) {
-      return 'Can\'t be empty';
-    }
-    return null;
   }
 
   Future<void> callToSignIn() async {
@@ -51,7 +43,8 @@ class _AuthLoginPageState extends State<AuthLoginPage> {
       }
       setState(() {
         Map<String, dynamic> map = json.decode(response.body);
-        responseData = map.cast<TextEditingController, String>();
+        responseData = map;
+        // responseData = map.cast<TextEditingController, String>();
       });
     }, onError: (error) {
       responseError = error;

@@ -9,7 +9,8 @@ class Play extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         body: WebView(
-            initialUrl: 'assets/gameplay/index.html',
+            initialUrl: 'assets/gameplay/index.html', // TODO - extend the plugin to use file assets ->
+            // https://medium.com/flutter-community/loading-local-assets-in-webview-in-flutter-b95aebd6edad 
             javascriptMode: JavascriptMode.unrestricted),
       );
 }
